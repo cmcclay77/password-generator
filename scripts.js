@@ -17,12 +17,12 @@ function getRandomItem(list) {
 
 function generatePassword() {
   
-    var userInput = window.prompt("How long do you want your password to be?")
+    var userInput = window.prompt("How long do you want your password to be? Must be between 8 and 128 characters.")
 
     var passwordLength = parseInt(userInput)
 
     if (isNaN(passwordLength)) {
-        window.alert("That is not a number!")
+        window.alert("That is not a number!  Please try again.")
       return
     }
 
@@ -30,19 +30,19 @@ function generatePassword() {
         window.alert("Password length must be between 8 and 128 characters")
         return
     }
-
+    // These variables ask the user what type of characters they want to include in the password.
     var userWantsNumbers = window.confirm("Would you like to include numbers in your password?")
     var userWantsSymbols = window.confirm("Would you like to include symbols in your password?")
     var userWantsLowercase = window.confirm("Would you like to include lowercase letters in your password?")
     var userWantsUppercase = window.confirm("Would you like to include uppercase letters in your password?")
-
+    // This section creates the Arrays for the characters needed to generate the password.
     var numberList = ["0","1","2","3","4","5","6","7","8","9"]
     var symbolList = ["!","@","#","$","%","*","&","(",")","?"]
     var lowercaseList = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
     var uppercaseList = []
 
     var optionsCart = []
-
+    // Loop used to create the uppercase Array.  
     for (var i = 0; i < lowercaseList.length; i++) {
         uppercaseList[i] = lowercaseList[i].toUpperCase()
     }
@@ -63,6 +63,10 @@ function generatePassword() {
         optionsCart.push(uppercaseList)
     }
 
+    if (optionsCart.length === 0) {
+        optionsCart.push(lowercaseList)
+    }
+
     var generatedPassword = ""
 
     for (var i = 0; i < passwordLength; i++) {
@@ -71,8 +75,7 @@ function generatePassword() {
         generatedPassword += randomChar
     }
 
-    console.log(generatedPassword)
-
+    return generatedPassword
 }    
 
 // Write password to the #password input
