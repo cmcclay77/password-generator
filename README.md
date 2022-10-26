@@ -6,11 +6,11 @@ The purpose of this project was to create an application that generates a random
 
 ## Usage
 
-The user can click the red generate password button to follow the window prompts that will create a random password.  
+The user can click the red generate password button to follow the window prompts that will create a random password.
+
+The live URL is :[Link to Password Generator](https://cmcclay77.github.io/password-generator)
 
 ## Screenshot
-
-The live link is:
 
 
 
