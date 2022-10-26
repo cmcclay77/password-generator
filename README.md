@@ -11,8 +11,8 @@ The user can click the red generate password button to follow the window prompts
 The live URL is :[Link to Password Generator](https://cmcclay77.github.io/password-generator)
 
 ## Screenshot
-
-![Alt text]./assets/css/images/screencapture-cmcclay77-github-io-password-generator-127-0-0-1-5500-index-html-2022-10-26-12_34_56 (1).png?raw=true "Screenshot")
+[
+](https://github.com/cmcclay77/password-generator/blob/a021399d90b1600dd8d14002377d19140ebe8b67/assets/css/images/screencapture-127-0-0-1-5500-index-html-2022-10-26-12_34_56%20(1).png)
 
 ## Credits
 
