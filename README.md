@@ -14,6 +14,7 @@ The live URL is :[Link to Password Generator](https://cmcclay77.github.io/passwo
 
 ![Alt text](./assets/css/images/screencapture-cmcclay77-github-io-password-generator-2022-10-26-12_34_56 (1).png?raw=true "Screenshot")
 
+
 ## Credits
 
 * I would like to thank all the people who helped me with this project to include friends and tutors
